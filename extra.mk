@@ -19,7 +19,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/edo-extra
 
 # Dolby Sound
-    $(call inherit-product, vendor/sony/edo-extra/extra/dolby/dolby.mk)
+#    $(call inherit-product, vendor/sony/edo-extra/extra/dolby/dolby.mk)
 
 # Sony Framework
 PRODUCT_COPY_FILES += \
@@ -34,5 +34,5 @@ PRODUCT_COPY_FILES += \
     $(call inherit-product, vendor/sony/edo-extra/extra/apps/apps.mk)
 
 # Game Controllers
- PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/)
+# PRODUCT_COPY_FILES += \
+#    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/)
