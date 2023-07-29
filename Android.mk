@@ -1,5 +1,5 @@
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter pdx214 pdx215 pdx217,$(TARGET_DEVICE)),)
+ifneq ($(filter pdx203 pdx206,$(TARGET_DEVICE)),)
 
 endif

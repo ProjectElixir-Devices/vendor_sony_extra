@@ -16,10 +16,10 @@
 
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/sony/extra-sagami
+    vendor/sony/edo-extra
 
 # Dolby Sound
-    $(call inherit-product, vendor/sony/extra-sagami/extra/dolby/dolby.mk)
+    $(call inherit-product, vendor/sony/edo-extra/extra/dolby/dolby.mk)
 
 # Sony Framework
 PRODUCT_COPY_FILES += \
@@ -28,10 +28,10 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/framework/product/,$(TARGET_COPY_OUT_PRODUCT)/)
 
 # Sony Camera
-    $(call inherit-product, vendor/sony/extra-sagami/extra/camera/camera.mk)
+#    $(call inherit-product, vendor/sony/edo-extra/extra/camera/camera.mk)
 
 # Sony Apps
-    $(call inherit-product, vendor/sony/extra-sagami/extra/apps/apps.mk)
+    $(call inherit-product, vendor/sony/edo-extra/extra/apps/apps.mk)
 
 # Game Controllers
  PRODUCT_COPY_FILES += \

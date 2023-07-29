@@ -15,11 +15,11 @@
 #
 
 # Dolby Path
-DOLBY_FILES := vendor/sony/extra-sagami/extra/dolby
+DOLBY_FILES := vendor/sony/edo-extra/extra/dolby
 
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/sony/extra-sagami/extra/dolby
+    vendor/sony/edo-extra/extra/dolby
 
 # SEPolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DOLBY_FILES)/sepolicy/vendor
@@ -59,7 +59,7 @@ PRODUCT_COPY_FILES += \
     $(DOLBY_FILES)/configs/dax/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(DOLBY_FILES)/configs/dax/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     $(DOLBY_FILES)/configs/dax/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
-    $(DOLBY_FILES)/configs/dax/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml 
+    $(DOLBY_FILES)/configs/dax/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml
 
 # Dolby Blobs
 PRODUCT_COPY_FILES += \
