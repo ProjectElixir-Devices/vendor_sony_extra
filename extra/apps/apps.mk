@@ -16,12 +16,11 @@
 
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
-   vendor/sony/edo-extra/extra/apps
+   vendor/sony/extra-edo/extra/apps
 
 # Sony Apps
 PRODUCT_PACKAGES += \
     SemcMusic \
-    360RALite \
     MovieCreator \
     SomcColorGamut \
     SomcDualshockManager \

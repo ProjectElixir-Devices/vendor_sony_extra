@@ -15,17 +15,8 @@
 #
 
 # Soong Namespace
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/sony/edo-extra/extra/camera
+# PRODUCT_SOONG_NAMESPACES += \
+    vendor/sony/extra-edo/extra/camera
 
 # Camera
-PRODUCT_PACKAGES += \
-    PhotoPro \
-    CinemaPro \
-    VideoPro \
-    CameraCommon \
-    CameraAddonPermission \
-    CameraCommonPermission \
-    CameraPanorama \
-    CreativeEffect \
-    PortraitSelfie
+# PRODUCT_PACKAGES += \
