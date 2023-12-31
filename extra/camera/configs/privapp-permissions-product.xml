@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- for the partition: /product -->
+<permissions>
+    <privapp-permissions package="com.sonymobile.photopro">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="com.sonymobile.permission.SECURE_DATA_MANAGER"/>
+    </privapp-permissions>
+</permissions>

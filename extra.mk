@@ -18,14 +18,19 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/pdx206-extra
 
+ifeq ($(TARGET_USES_EXTRAS_DOLBY),true)
 # Dolby Sound
     $(call inherit-product, vendor/sony/pdx206-extra/extra/dolby/dolby.mk)
 
 # 360 Reality Audio Upmix
     $(call inherit-product, vendor/sony/pdx206-extra/extra/threesixtyra/upmix.mk)
+endif
 
-# Sony Framework
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/framework/system/,$(TARGET_COPY_OUT_SYSTEM)/) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/framework/system_ext/,$(TARGET_COPY_OUT_SYSTEM_EXT)/) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/framework/product/,$(TARGET_COPY_OUT_PRODUCT)/)
+ifeq ($(TARGET_USES_EXTRAS_CAMERAAPPS),true)
+    $(call inherit-product, vendor/sony/pdx206-extra/extra/camera/camera.mk)
+endif
+
+# Framework
+PRODUCT_PACKAGES += \
+        com.sonyericsson.idd_impl \
+        com.sony.device
