@@ -16,26 +16,16 @@
 
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/sony/extra-edo
+    vendor/sony/pdx206-extra
 
 # Dolby Sound
-    $(call inherit-product, vendor/sony/extra-edo/extra/dolby/dolby.mk)
+    $(call inherit-product, vendor/sony/pdx206-extra/extra/dolby/dolby.mk)
 
 # 360 Reality Audio Upmix
-    $(call inherit-product, vendor/sony/extra-edo/extra/threesixtyra/upmix.mk)
+    $(call inherit-product, vendor/sony/pdx206-extra/extra/threesixtyra/upmix.mk)
 
 # Sony Framework
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/framework/system/,$(TARGET_COPY_OUT_SYSTEM)/) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/framework/system_ext/,$(TARGET_COPY_OUT_SYSTEM_EXT)/) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/framework/product/,$(TARGET_COPY_OUT_PRODUCT)/)
-
-# Sony Camera | WIP
-#    $(call inherit-product, vendor/sony/extra-edo/extra/camera/camera.mk)
-
-# Sony Apps
-    $(call inherit-product, vendor/sony/extra-edo/extra/apps/apps.mk)
-
-# Game Controllers
- PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/)

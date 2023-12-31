@@ -16,11 +16,11 @@
 #
 
 # 360RA Path
-UPMIX_FILES += vendor/sony/extra-edo/extra/threesixtyra
+UPMIX_FILES += vendor/sony/pdx206-extra/extra/threesixtyra
 
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/sony/extra-edo/extra/threesixtyra
+    vendor/sony/pdx206-extra/extra/threesixtyra
 
 # Packages
 PRODUCT_PACKAGES += \

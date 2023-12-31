@@ -15,18 +15,18 @@
 #
 
 # Dolby Path
-LOCAL_DOLBY := vendor/sony/extra-edo/extra/dolby
+LOCAL_DOLBY := vendor/sony/pdx206-extra/extra/dolby
 
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/sony/extra-edo/extra/dolby
+    vendor/sony/pdx206-extra/extra/dolby
 
 # SEPolicy
-BOARD_VENDOR_SEPOLICY_DIRS += vendor/sony/extra-edo/extra/dolby/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += vendor/sony/pdx206-extra/extra/dolby/sepolicy/vendor
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/sony/extra-edo/extra/dolby/configs/vintf/dolby_framework_matrix.xml
-DEVICE_MANIFEST_FILE += vendor/sony/extra-edo/extra/dolby/configs/vintf/vendor.dolby.hardware.dms.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/sony/pdx206-extra/extra/dolby/configs/vintf/dolby_framework_matrix.xml
+DEVICE_MANIFEST_FILE += vendor/sony/pdx206-extra/extra/dolby/configs/vintf/vendor.dolby.hardware.dms.xml
 
 # Enable Dolby DAP
 AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
