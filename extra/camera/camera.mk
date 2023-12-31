@@ -6,4 +6,4 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.lens.oem_camera_package=com.sonymobile.photopro
 
-$(call inherit-product, vendor/sony/pdx206-camera/pdx206-camera-vendor.mk)
+$(call inherit-product, vendor/sony/pdx206-extra/extra/camera/pdx206-camera-vendor.mk)
