@@ -21,9 +21,6 @@ PRODUCT_SOONG_NAMESPACES += \
 ifeq ($(TARGET_USES_EXTRAS_DOLBY),true)
 # Dolby Sound
     $(call inherit-product, vendor/sony/pdx206-extra/extra/dolby/dolby.mk)
-
-# 360 Reality Audio Upmix
-    $(call inherit-product, vendor/sony/pdx206-extra/extra/threesixtyra/upmix.mk)
 endif
 
 ifeq ($(TARGET_USES_EXTRAS_CAMERAAPPS),true)
