@@ -2,7 +2,7 @@
 <device_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <format_version major="3" minor="4" maintenance="0" />
   <tool_version major="3" minor="6" maintenance="0" />
-  <preset id="ieq_detailed" type="ieq">
+  <preset id="1" name="detailed" type="ieq">
     <data>
       <ieq-bands>
         <band_ieq frequency="47" target="-419"/>
@@ -28,7 +28,7 @@
       </ieq-bands>
     </data>
   </preset>
-  <preset id="ieq_balanced" type="ieq">
+  <preset id="2" name="balanced" type="ieq">
     <data>
       <ieq-bands>
         <band_ieq frequency="47" target="157"/>
@@ -54,7 +54,7 @@
       </ieq-bands>
     </data>
   </preset>
-  <preset id="ieq_warm" type="ieq">
+  <preset id="3" name="warm" type="ieq">
     <data>
       <ieq-bands>
         <band_ieq frequency="47" target="67"/>
