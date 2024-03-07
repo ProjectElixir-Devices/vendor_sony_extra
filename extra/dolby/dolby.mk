@@ -73,8 +73,12 @@ PRODUCT_COPY_FILES += \
 # Dolby Vendor Prop(s)
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.dolby.dax.version=DAX3_3.8.5.20_r1 \
-    vendor.audio.dolby.ds2.enabled=false \
-    vendor.audio.dolby.ds2.hardbypass=false
+    ro.vendor.audio.dolby.dax.version=DAX3_3.6 \
+    vendor.audio.dolby.ds2.enabled=true \
+    vendor.audio.dolby.ds2.hardbypass=false \
+    ro.vendor.audio.dolby.dax.support=true \
+    ro.vendor.audio.dolby.surround.enable=true \
+    persist.vendor.audio_fx.current=dolby
 
 # Dolby Package(s)
 PRODUCT_PACKAGES += \
