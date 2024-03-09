@@ -4,6 +4,6 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.google.lens.oem_camera_package=com.sonyericsson.android.camera
+    ro.com.google.lens.oem_camera_package=com.sonyericsson.android.camerax
 
 $(call inherit-product, vendor/sony/pdx206-extra/extra/camera/pdx206-camera-vendor.mk)
