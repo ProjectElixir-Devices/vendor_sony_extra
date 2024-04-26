@@ -16,15 +16,15 @@
 
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/sony/pdx206-extra
+    vendor/sony/extra
 
 ifeq ($(TARGET_USES_EXTRAS_DOLBY),true)
 # Dolby Sound
-    $(call inherit-product, vendor/sony/pdx206-extra/extra/dolby/dolby.mk)
+    $(call inherit-product, vendor/sony/extra/dolby/dolby.mk)
 endif
 
 ifeq ($(TARGET_USES_EXTRAS_CAMERAAPPS),true)
-    $(call inherit-product, vendor/sony/pdx206-extra/extra/camera/camera.mk)
+    $(call inherit-product, vendor/sony/extra/camera/camera.mk)
 endif
 
 # Framework
