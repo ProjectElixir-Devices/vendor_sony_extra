@@ -26,8 +26,3 @@ endif
 ifeq ($(TARGET_USES_EXTRAS_CAMERAAPPS),true)
     $(call inherit-product, vendor/sony/extra/camera/camera.mk)
 endif
-
-# Framework
-PRODUCT_PACKAGES += \
-        com.sonyericsson.idd_impl \
-        com.sony.device
