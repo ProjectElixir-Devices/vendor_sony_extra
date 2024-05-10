@@ -18,11 +18,11 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/extra
 
-ifeq ($(TARGET_USES_EXTRAS_DOLBY),true)
+ifeq ($(TARGET_SHIPS_SOUND_ENHANCEMENT),true)
 # Dolby Sound
     $(call inherit-product, vendor/sony/extra/dolby/dolby.mk)
 endif
 
-ifeq ($(TARGET_USES_EXTRAS_CAMERAAPPS),true)
+ifeq ($(TARGET_SHIPS_CAMERA_APPS),true)
     $(call inherit-product, vendor/sony/extra/camera/camera.mk)
 endif
