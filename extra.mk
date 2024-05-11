@@ -18,11 +18,22 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/extra
 
-ifeq ($(TARGET_SHIPS_SOUND_ENHANCEMENT),true)
 # Dolby Sound
+ifeq ($(TARGET_SHIPS_SOUND_ENHANCEMENT),true)
     $(call inherit-product, vendor/sony/extra/dolby/dolby.mk)
 endif
 
-ifeq ($(TARGET_SHIPS_CAMERA_APPS),true)
+# Camera Apps
+ifeq ($(TARGET_SHIPS_SONY_CAMERA),true)
     $(call inherit-product, vendor/sony/extra/camera/camera.mk)
+endif
+
+# Sony Apps
+ifeq ($(TARGET_SHIPS_SONY_APPS),true)
+    $(call inherit-product, vendor/sony/extra/apps/apps.mk)
+endif
+
+# Game Controllers
+ifeq ($(TARGET_SUPPORTS_GAME_CONTROLLERS),true)
+    $(call inherit-product, vendor/sony/extra/controllers/gc.mk)
 endif
