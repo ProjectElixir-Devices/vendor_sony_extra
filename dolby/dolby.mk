@@ -137,7 +137,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PACKAGES += \
     ThreeSixtyRASettings \
     DolbySound \
-    SoundEnhancement \
     ThreeSixtyRASystem \
     daxService \
     com.sony.threesixtyra.audiofx \
