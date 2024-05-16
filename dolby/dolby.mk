@@ -136,6 +136,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 # Packages
 PRODUCT_PACKAGES += \
     ThreeSixtyRASettings \
+    ThreeSixtyRASystem-Overlay \
     DolbySound \
     ThreeSixtyRASystem \
     daxService \
